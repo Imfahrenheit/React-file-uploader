@@ -1,15 +1,18 @@
-import React from 'react'
-import {NavLink} from 'react-router-dom'
-import '../css/common.css'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "../css/common.css";
 
-
-const NavBar= () => {
-  return <div>
-      <nav className="nav-bar" style={{ display: "flex", justifyContent: "space-evenly" }}>
+const NavBar = () => {
+  return (
+    <div>
+      <nav
+        className="nav-bar"
+        style={{ display: "flex", justifyContent: "space-evenly" }}
+      >
         <div>
           <li className="nav-text">
             <NavLink activeClassName={"active"} exact={true} to="/">
-             Home
+              Home
             </NavLink>
           </li>
         </div>
@@ -22,6 +25,7 @@ const NavBar= () => {
           </li>
         </div>
       </nav>
-    </div>;
-}
-export default NavBar
+    </div>
+  );
+};
+export default NavBar;
