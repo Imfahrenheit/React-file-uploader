@@ -72,7 +72,7 @@
   margin-top: 5px;
 }
 .file-info {
-  margin: 20px 0 0px 25px;
+  margin: 20px 0 0px 55px;
   border: 1px solid rgb(206, 203, 203);
   border-radius: 3px;
   width: 70%;
@@ -249,13 +249,20 @@ a {
   color: red;
   cursor: pointer;
 }
-@media screen and (max-width : 320px){
+@media screen and (max-width : 450px){
 
 .nav-bar{
-  width: 95%
+  width: 95%;
+  font-size:20px;
 }
 .wrapper{
   width: 95%;
+}.file-info{
+
+  margin: 20px auto 0 auto;
+}
+.upload-btn{
+margin: 20px 15px 0px 0;
 }
 .preview {
   width:85%; 
@@ -274,7 +281,9 @@ margin-bottom:8px;
 
 }
 @media screen 
-  and (min-device-width: 1200px) 
+  and (min-width: 1200px) 
+  and (max-width: 1800px) 
+
   
 
    { 

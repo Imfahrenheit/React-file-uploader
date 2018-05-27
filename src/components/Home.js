@@ -11,7 +11,6 @@ class Home extends Component {
     err: null,
     uploading: false,
     showAlert: false,
-    validationError: false,
     ileSizeAlert: false
   };
   // onchnage handler
@@ -122,12 +121,7 @@ class Home extends Component {
           text="your image is uploaded "
           onConfirm={() => this.setState({ showAlert: false })}
         />
-        <SweetAlert
-          show={this.state.validationError}
-          title=" No file Selected !!!"
-          text="Please Upload a picture"
-          onConfirm={() => this.setState({ validationError: false })}
-        />
+        
         <SweetAlert
           show={this.state.fileSizeAlert}
           title=" File is too Large!!!"

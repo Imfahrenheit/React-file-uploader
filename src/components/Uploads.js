@@ -13,7 +13,7 @@ class Upload extends Component {
     deleting: false,
     deleted: false
   };
-  // on componentmount sends HTTTP call for files
+  // on componentmount sends HTTTP get request  for files uploaded previousely
   componentDidMount() {
     this.refreshImg();
   }
