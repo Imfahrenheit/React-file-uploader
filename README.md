@@ -15,6 +15,6 @@ Then run these commands from your CLI
 then 
 
 ```
-nmp install
+npm install
 yant start or npm npm start
 ```
